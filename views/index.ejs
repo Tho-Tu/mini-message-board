@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title><%= locals.title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1><%= locals.title %></h1>
+    <p>Welcome to <%= locals.title %></p>
+    <% for (let i = 0; i < locals.messages.length; i++) { %>
+    <div><%= locals.messages[i].text %></div>
+    <div><%= locals.messages[i].user %></div>
+    <div><%= locals.messages[i].added %></div>
+    <br />
+    <% } %>
   </body>
 </html>
