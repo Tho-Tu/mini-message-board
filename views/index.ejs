@@ -7,9 +7,10 @@
   <body>
     <h1><%= locals.title %></h1>
     <p>Welcome to <%= locals.title %></p>
-    <% for (let i = 0; i < locals.messages.length; i++) { %>
-    <div><%= locals.messages[i].text %></div>
+    <a href="/new"><button>New Message</button></a>
+    <% for (let i = locals.messages.length - 1; i >= 0 ; i--) { %>
     <div><%= locals.messages[i].user %></div>
+    <div><%= locals.messages[i].text %></div>
     <div><%= locals.messages[i].added %></div>
     <br />
     <% } %>
