@@ -13,3 +13,5 @@ A simple web application built with Node.js and Express that allows users to cre
 - Node.js
 - Express.js
 - Template engine (EJS)
+
+Click [HERE](https://mini-message-board-nwrq.onrender.com/ "Live mini message board demo") for the live demo!
